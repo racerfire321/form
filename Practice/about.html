@@ -4,8 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Positioning</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+  .container {
+    background-color: bisque;
+    padding: 10px;
+    position: relative;
+    height: 600vh;
+  }
+
+  .box {
+      height: 100px;
+      width: 200px;
+      border: 2px solid red;
+      padding: 10px;
+      margin: 10px;
+     
+  }
+
+  #box-1 {
+      position: sticky;
+      top:0px;
+      left: 300px;
+      width: 500px;
+  }
+
+  </style>
 </head>
 <body>
-  
+    <!-- Positioning (relative, absolute, fixed, sticky)
+      top, left, bottom, right 
+
+      Note: All html elements are static in first place.
+    -->
+    <h1>Learning about CSS positioning</h1>
+    <div class="container">
+      <div class="box" id="box-1">Box 1</div>
+      <div class="box" id="box-2">Box 2</div>
+      <div class="box" id="box-3">Box 3</div>
+      <div class="box" id="box-4">Box 4</div>
+      <div class="box" id="box-5">Box 5</div>
+      <div class="box" id="box-6">Box 6</div>
+    </div>
 </body>
 </html>
